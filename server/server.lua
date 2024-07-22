@@ -10,11 +10,11 @@ RegisterNetEvent("not_a_script:delgun:deleteEntity", function(networkedEntity)
     local source = source
     local player = ESX.GetPlayerFromId(source)
     if not (player) then return end
-    if not DelGun.groups[player.getGroup()] then
+    if not (DelGun.groups[player.getGroup()]) then
         trace("Someone is trying to execute the delgun event without having the good group, source : %s", source)
         return
     end
-    if not GetSelectedPedWeapon(GetPlayerPed(source)) == `WEAPON_PISTOL` then
+    if not (GetSelectedPedWeapon(GetPlayerPed(source))) == `WEAPON_PISTOL` then
         trace("Someone is trying to execute the delgun event without having the good weapon, source : %s", source)
         return
     end
