@@ -4,6 +4,6 @@ This script allows you to delete any entity with a gun. It uses ESX for permissi
 
 Note: This script will not receive support. If you encounter a bug, please create an issue.
 
-Interested in other scripts? Check out our [Not a Tebex Shop](https://google.fr).
+Interested in other scripts? Check out [Not a Tebex Shop](https://google.fr).
 
-Join our Discord community [here](https://discord.com).
+Join our Discord community [here](https://discord.gg/kKUYHevrBY).
