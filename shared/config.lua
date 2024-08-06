@@ -4,5 +4,6 @@ DelGun = {
         ["admin"] = true,
         ["modo"] = true
     },
-    enableTrace = true, -- Enable Trace (Debug) messages 
+    enableTrace = true, -- Enable Trace (Debug) messages
+    weaponModel = `WEAPON_PISTOL`
 }

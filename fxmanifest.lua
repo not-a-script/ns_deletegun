@@ -9,6 +9,7 @@ version '1.0.0'
 repository 'https://github/notascript/ns_deletegun'
 
 shared_scripts {
+    'shared/utils.lua',
     'shared/config.lua'
 }
 server_script {
