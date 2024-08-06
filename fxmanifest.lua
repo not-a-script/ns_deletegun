@@ -18,3 +18,8 @@ server_script {
 client_script {
     'client/client.lua'
 }
+
+dependencies {
+    '/onesync',
+    '/server:8900',
+}
