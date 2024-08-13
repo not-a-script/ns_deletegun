@@ -19,6 +19,10 @@ client_script {
     'client/client.lua'
 }
 
+escrow_ignore {
+    '**/*.lua'
+}
+
 dependencies {
     '/onesync',
     '/server:8900',
