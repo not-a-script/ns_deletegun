@@ -5,7 +5,7 @@ game 'gta5'
 
 name 'Not a Delete Gun'
 author 'Not a Script'
-version '1.0.0'
+version '1.0.1'
 repository 'https://github/notascript/ns_deletegun'
 
 shared_scripts {
@@ -13,6 +13,7 @@ shared_scripts {
     'shared/config.lua'
 }
 server_script {
+    'server/framework.lua',
     'server/server.lua'
 } 
 client_script {

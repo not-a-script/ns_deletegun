@@ -1,4 +1,4 @@
-local DELGUN_WEAPON = `WEAPON_PISTOL` -- You can change the model if you want too
+local DELGUN_WEAPON = DelGun.weaponModel -- You can change the model in the config.
 local isDelgunMode = false
 
 local function removeEntity(entity)
@@ -26,9 +26,8 @@ end
 local function handleDelgunShot()
     local _, entity = GetEntityPlayerIsFreeAimingAt(PlayerId())
 
-    if entity and DoesEntityExist(entity) then
-        removeEntity(entity)
-    end
+    if not DoesEntityExist(entity) then return end
+    removeEntity(entity)
 end
 
 CreateThread(function()
@@ -46,13 +45,11 @@ CreateThread(function()
     end
 end)
 
-RegisterNetEvent('not_a_script:delgun:giveWeapon', function()
+RegisterNetEvent('not_a_script:delgun:state', function()
     local playerGroup <const> = LocalPlayer.state.group -- This thing is exploitable beaware, i'm pretty sure you can rewrite the statebag and change the group of the player?
     if not IsAdmin(playerGroup) then
         Trace("You can't use the event not_a_script:delgun:giveWeapon without having the admin group.")
         return
     end
-    local playerPed = PlayerPedId()
-    GiveWeaponToPed(playerPed, DELGUN_WEAPON, 0, false, true)
     isDelgunMode = true
 end)
