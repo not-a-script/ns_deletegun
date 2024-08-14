@@ -1,4 +1,4 @@
-Delete Gun Script
+Not a Delete Gun
 
 This script allows you to delete any entity with a gun.
 
